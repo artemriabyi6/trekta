@@ -1,0 +1,287 @@
+main {
+    background-color: $background2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.formSection {
+    color: white;
+//   background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.chooseMaterialType {
+    margin-bottom: 40px;
+    .title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+     color: white;
+     .materialsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 60px;
+        .materialBlock {
+        width: 100px;
+        height: 100px;
+        transition: 0.6s ease;
+        &:hover {
+            scale: 1.3;
+        }
+        &.active {
+            border: 2px solid $primary;
+        }
+    cursor: pointer;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+        }
+        
+
+     }
+}
+
+  .subTitle {
+    font-size: 30px;
+    display: block;
+    margin: 30px 0;
+  }
+
+
+.fillPercentage {
+  margin-bottom: 15px;
+
+}
+
+.percentageOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.percentageButton {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.active {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.formHeader {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.uploadSection {
+  margin-bottom: 25px;
+}
+
+.uploadTitle {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fileFormats {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.dropZone {
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  padding: 30px 0px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: black;
+    border-color: black;
+    background-color: $primary;
+  }
+}
+
+.fileInput {
+  display: none;
+}
+
+.dropZoneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+
+.fileName {
+  color: $primary;
+  font-weight: bold;
+}
+
+.materialsSection {
+  margin-top: 20px;
+}
+
+.commentIcon {
+  font-size: 16px;
+}
+
+.materialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.materialButton {
+  padding: 8px 5px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 13px;
+  text-align: center;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.active {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.userInfo {
+  border-radius: 8px;
+  padding: 20px 0px;
+  margin-top: 20px;
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+  }
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+   color: white;
+  }
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.textareaField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-height: 100px;
+  resize: vertical;
+  color: white;
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+  
+  &::placeholder {
+    color: #aaa;
+  }
+}
+
+.submitButton {
+  background-color: $primary;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: $primary;
+  }
+}

@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    color: white;
+     @media (max-width: 767px) {
+           width: 80%;
+           flex-direction: column;
+           gap: 30px;
+        //    justify-content: inherit;
+           align-items: center;
+        }
+    
+    .imgBlock{
+        max-width: 400px;
+        // @media (max-width: 767px) {
+        //     width: 200px;
+        // }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .textBlock{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        .cardTitle {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .desc {
+            margin-bottom: 20px;
+        }
+        .text{
+            margin-bottom: 40px;
+        }
+
+        .moreBtn{
+            color: $primary;
+            width: 87px;
+        }
+    }
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    @media (max-width:767px) {
+        flex-direction: column;
+        
+    }       
+    
+}

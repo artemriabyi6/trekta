@@ -1,0 +1,26 @@
+.mainBannerWrapper {
+    background-color: $background2;
+    padding-bottom: 50px;
+    width: 100%;
+    .container {
+        padding-top: 80px;
+          @media (max-width: 767px) {
+            padding-top: 30px;
+ }
+        h1 {
+            color: white;
+            font-size: 70px;
+            margin-bottom: 70px;
+              @media (max-width: 767px) {
+                font-size: 40px;
+                line-height: 1.1;
+ }
+        }
+        h3 {
+            font-size: 30px;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    }
+}
